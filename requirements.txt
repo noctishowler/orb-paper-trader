@@ -1,1 +1,4 @@
-
+alpaca-py
+python-dotenv
+PyYAML
+pandas
