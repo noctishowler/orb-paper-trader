@@ -1,1 +1,37 @@
+paper: true
 
+virtual_account:
+  starting_balance: 100.00
+  max_position_value: 25.00
+  max_total_exposure: 50.00
+  risk_per_trade: 1.00
+  daily_loss_limit: 3.00
+  max_open_positions: 2
+  max_trades_per_day: 3
+
+strategy:
+  opening_range_minutes: 5
+  breakout_buffer_pct: 0.001
+  relative_volume_min: 2.0
+  atr_period: 14
+  atr_stop_multiple: 0.50
+  breakeven_at_r: 1.0
+  trailing_start_r: 2.0
+  trailing_atr_multiple: 0.75
+
+market:
+  timezone: America/New_York
+  no_new_entries_after: "14:30"
+  flatten_at: "15:55"
+
+watchlist:
+  - NVDA
+  - AMD
+  - RKLB
+  - IREN
+  - CRWV
+  - NBIS
+  - CRDO
+
+journal:
+  database: data/trades.db
